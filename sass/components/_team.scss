@@ -1,0 +1,83 @@
+.team {
+  background-color: #f5f4fa;
+  &__list {
+    display: flex;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+  }
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--secondary-title-color);
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--main-text-color);
+    }
+    &__socials {
+      justify-content: center;
+      margin-top: 16px;
+      display: flex;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    &__icon {
+      fill: #afb1b8;
+      width: 20px;
+      height: 20px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      .team__content__link:hover &,
+      .team__content__link:focus & {
+        fill: #fff;
+      }
+    }
+    &__link {
+      display: flex;
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: #2196f3;
+      }
+    }
+  }
+}
